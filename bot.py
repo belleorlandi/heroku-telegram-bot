@@ -2,6 +2,7 @@
 #import redis
 import os
 import telebot
+#import botWiki
 # import some_api_lib
 # import ...
 
@@ -25,7 +26,7 @@ bot = telebot.TeleBot(token)
 # Responde a comandos: (/comando)
 @bot.message_handler(commands=['acorde', 'help'])
 def send_welcome(message):
-	bot.reply_to(message, "Bom dia, vamos começar?")
+	bot.reply_to(message, "Bom dia!")
 
 #@bot.message_handler(content_types=['wikipedia'])
 #def wiki(message):
